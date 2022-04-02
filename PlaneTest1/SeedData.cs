@@ -20,9 +20,9 @@ namespace Plane
 			{
 				var user = new IdentityUser
 				{
-					UserName = "admin",
-	                Email = "admin@localhost"
-
+					UserName = "admin@localhost",
+	                Email = "admin@localhost",
+					EmailConfirmed = true
 				};
 				var result = userManager.CreateAsync(user, "P@assword1").Result;
 				if (result.Succeeded)
