@@ -12,5 +12,11 @@ namespace PlaneTest1.Data
             : base(options)
         {
         }
+        //public DbSet<Users> Users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

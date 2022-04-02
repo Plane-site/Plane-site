@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IT kariera(Kurs) Projects\\PlaneTest1\\PlaneTest1\\PlaneTest1.csproj": {}
+    "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {}
   },
   "projects": {
-    "D:\\IT kariera(Kurs) Projects\\PlaneTest1\\PlaneTest1\\PlaneTest1.csproj": {
+    "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT kariera(Kurs) Projects\\PlaneTest1\\PlaneTest1\\PlaneTest1.csproj",
+        "projectUniqueName": "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
         "projectName": "PlaneTest1",
-        "projectPath": "D:\\IT kariera(Kurs) Projects\\PlaneTest1\\PlaneTest1\\PlaneTest1.csproj",
-        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-        "outputPath": "D:\\IT kariera(Kurs) Projects\\PlaneTest1\\PlaneTest1\\obj\\",
+        "projectPath": "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
+        "packagesPath": "C:\\Users\\my\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\my\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,13 +54,13 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.15, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

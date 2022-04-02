@@ -45,7 +45,7 @@ namespace PlaneTest1.Controllers
         }
 
         // GET: Flights/Create
-        [Authorize]
+        [Authorize (Roles = "Administrator")]
         public IActionResult Create()
         {
             return View();
