@@ -45,7 +45,7 @@ namespace PlaneTest1.Controllers
         }
 
         // GET: Flights/Create
-        [Authorize (Roles = "Administrator")]
+        [Authorize (Roles = "Administrator")]// da ima rolq che da ima perm da pipa tam
         public IActionResult Create()
         {
             return View();

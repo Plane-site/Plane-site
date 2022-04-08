@@ -37,7 +37,7 @@ namespace PlaneTest1
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()//rolite
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>();//dobavq frameworka
             services.AddControllersWithViews();
         }
 
@@ -46,7 +46,7 @@ namespace PlaneTest1
             IApplicationBuilder app,
             IWebHostEnvironment env,
             UserManager<IdentityUser> userManager,
-            RoleManager<IdentityRole> roleManager
+            RoleManager<IdentityRole> roleManager//pravi vrazkata
             )
         {
             if (env.IsDevelopment())
@@ -65,7 +65,7 @@ namespace PlaneTest1
 
             app.UseRouting();
 
-            app.UseAuthentication();
+            app.UseAuthentication();//Da ima authenticaciq i authorizaciq
             app.UseAuthorization();
 
             SeedData.Seed(userManager, roleManager);

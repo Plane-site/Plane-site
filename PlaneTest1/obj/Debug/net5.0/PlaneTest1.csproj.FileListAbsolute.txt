@@ -506,3 +506,4 @@ C:\GitHub\Plane-site\PlaneTest1\obj\Debug\net5.0\ref\PlaneTest1.dll
 C:\GitHub\Plane-site\PlaneTest1\obj\Debug\net5.0\PlaneTest1.pdb
 C:\GitHub\Plane-site\PlaneTest1\obj\Debug\net5.0\PlaneTest1.genruntimeconfig.cache
 C:\GitHub\Plane-site\PlaneTest1\obj\Debug\net5.0\Razor\Views\Flights\IndexRest.cshtml.g.cs
+C:\Users\my\Documents\GitHub\Plane-site\PlaneTest1\obj\Debug\net5.0\Razor\Views\Flights\IndexRest.cshtml.g.cs

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {}
+    "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {
+    "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
+        "projectUniqueName": "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
         "projectName": "PlaneTest1",
-        "projectPath": "C:\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
-        "packagesPath": "C:\\Users\\barf\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\Plane-site\\PlaneTest1\\obj\\",
+        "projectPath": "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
+        "packagesPath": "C:\\Users\\my\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\my\\Documents\\GitHub\\Plane-site\\PlaneTest1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\barf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\my\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
