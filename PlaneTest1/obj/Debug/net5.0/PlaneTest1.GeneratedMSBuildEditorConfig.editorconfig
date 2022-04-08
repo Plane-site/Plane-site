@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = PlaneTest1
-build_property.ProjectDir = C:\Users\my\Documents\GitHub\Plane-site\PlaneTest1\
+build_property.ProjectDir = C:\GitHub\Plane-site\PlaneTest1\

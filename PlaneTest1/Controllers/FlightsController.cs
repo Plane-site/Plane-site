@@ -151,5 +151,9 @@ namespace PlaneTest1.Controllers
         {
             return _context.Flights.Any(e => e.PlaneNumber == id);
         }
+        public async Task<IActionResult> IndexRest()
+        {
+            return View(await _context.Flights.ToListAsync());
+        }
     }
 }
