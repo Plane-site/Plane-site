@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.PlaneNumber)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Arrival)
             </th>
             <th>
@@ -38,34 +41,37 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Arrival)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Departure)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PilotName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.From)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.To)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BuisnesSeats)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NormalSeats)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.PlaneNumber">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.PlaneNumber">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.PlaneNumber">Delete</a>
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlaneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Arrival)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PilotName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.From)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.To)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BuisnesSeats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NormalSeats)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PlaneNumber">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PlaneNumber">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PlaneNumber">Delete</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>

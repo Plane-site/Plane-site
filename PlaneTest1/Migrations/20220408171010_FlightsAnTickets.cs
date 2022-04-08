@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PlaneTest1.Migrations
 {
-    public partial class FlightTickets : Migration
+    public partial class FlightsAnTickets : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -30,7 +30,7 @@ namespace PlaneTest1.Migrations
                 name: "Tickets",
                 columns: table => new
                 {
-                    EGN = table.Column<int>(type: "int", maxLength: 10, nullable: false)
+                    NumTicket = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nationality = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -43,7 +43,7 @@ namespace PlaneTest1.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tickets", x => x.EGN);
+                    table.PrimaryKey("PK_Tickets", x => x.NumTicket);
                 });
         }
 

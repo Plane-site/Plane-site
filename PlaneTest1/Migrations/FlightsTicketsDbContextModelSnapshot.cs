@@ -57,9 +57,8 @@ namespace PlaneTest1.Migrations
 
             modelBuilder.Entity("PlaneTest1.Models.Tickets", b =>
                 {
-                    b.Property<int>("EGN")
+                    b.Property<int>("NumTicket")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(10)
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -91,7 +90,7 @@ namespace PlaneTest1.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("EGN");
+                    b.HasKey("NumTicket");
 
                     b.ToTable("Tickets");
                 });

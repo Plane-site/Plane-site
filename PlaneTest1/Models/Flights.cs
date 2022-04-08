@@ -8,7 +8,8 @@ namespace PlaneTest1.Models
 {
     public class Flights
     {
-        [Key]
+        [Key]// обявява се че PlaneNumber ще бъде първичен ключ за базата данни.
+        // декларират се променливи които ще бъдат полетата на нашата база данни.
         public int PlaneNumber { get; set; }
         [Required(ErrorMessage = "Provide Date of arrival")]
         public DateTime Arrival { get; set; }

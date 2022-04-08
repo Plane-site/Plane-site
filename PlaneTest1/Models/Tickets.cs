@@ -9,9 +9,10 @@ namespace PlaneTest1.Models
 {
     public class Tickets
     {
-        [Key]
-        [StringLength(10, MinimumLength = 10, ErrorMessage = "Your EGN need to be 10 characters")]
-        public int EGN { get; set; }
+        [Key]// обявява се че NumTicket ще бъде първичен ключ за базата данни.
+        // декларират се променливи които ще бъдат полетата на нашата база данни.
+        //  [StringLength(10, MinimumLength = 10, ErrorMessage = "Your EGN need to be 10 characters")]
+        public int NumTicket { get; set; }
         public string Nationality { get; set; }
         [Required(ErrorMessage = "Provide your First name")]
         public string FirstName { get; set; }

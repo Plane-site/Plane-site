@@ -10,8 +10,8 @@ using PlaneTest1.Data;
 namespace PlaneTest1.Migrations
 {
     [DbContext(typeof(FlightsTicketsDbContext))]
-    [Migration("20220321182902_FlightTickets")]
-    partial class FlightTickets
+    [Migration("20220408171010_FlightsAnTickets")]
+    partial class FlightsAnTickets
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -59,9 +59,8 @@ namespace PlaneTest1.Migrations
 
             modelBuilder.Entity("PlaneTest1.Models.Tickets", b =>
                 {
-                    b.Property<int>("EGN")
+                    b.Property<int>("NumTicket")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(10)
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -93,7 +92,7 @@ namespace PlaneTest1.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("EGN");
+                    b.HasKey("NumTicket");
 
                     b.ToTable("Tickets");
                 });

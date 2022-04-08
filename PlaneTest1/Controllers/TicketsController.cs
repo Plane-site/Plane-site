@@ -34,7 +34,7 @@ namespace PlaneTest1.Controllers
             }
 
             var tickets = await _context.Tickets
-                .FirstOrDefaultAsync(m => m.EGN == id);
+                .FirstOrDefaultAsync(m => m.NumTicket == id);
             if (tickets == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace PlaneTest1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EGN,Nationality,FirstName,SecondName,LastName,Phone,Email,Class,PlaneNumber")] Tickets tickets)
+        public async Task<IActionResult> Create([Bind("NumTicket,Nationality,FirstName,SecondName,LastName,Phone,Email,Class,PlaneNumber")] Tickets tickets)
         {
             if (ModelState.IsValid)
             {
@@ -86,9 +86,9 @@ namespace PlaneTest1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EGN,Nationality,FirstName,SecondName,LastName,Phone,Email,Class,PlaneNumber")] Tickets tickets)
+        public async Task<IActionResult> Edit(int id, [Bind("NumTicket,Nationality,FirstName,SecondName,LastName,Phone,Email,Class,PlaneNumber")] Tickets tickets)
         {
-            if (id != tickets.EGN)
+            if (id != tickets.NumTicket)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace PlaneTest1.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TicketsExists(tickets.EGN))
+                    if (!TicketsExists(tickets.NumTicket))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace PlaneTest1.Controllers
             }
 
             var tickets = await _context.Tickets
-                .FirstOrDefaultAsync(m => m.EGN == id);
+                .FirstOrDefaultAsync(m => m.NumTicket == id);
             if (tickets == null)
             {
                 return NotFound();
@@ -147,7 +147,7 @@ namespace PlaneTest1.Controllers
 
         private bool TicketsExists(int id)
         {
-            return _context.Tickets.Any(e => e.EGN == id);
+            return _context.Tickets.Any(e => e.NumTicket == id);
         }
     }
 }
