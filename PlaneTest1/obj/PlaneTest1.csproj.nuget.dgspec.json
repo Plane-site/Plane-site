@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IT kariera(Kurs) Projects\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {}
+    "C:\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {}
   },
   "projects": {
-    "D:\\IT kariera(Kurs) Projects\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {
+    "C:\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT kariera(Kurs) Projects\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
+        "projectUniqueName": "C:\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
         "projectName": "PlaneTest1",
-        "projectPath": "D:\\IT kariera(Kurs) Projects\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
-        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-        "outputPath": "D:\\IT kariera(Kurs) Projects\\Plane-site\\PlaneTest1\\obj\\",
+        "projectPath": "C:\\GitHub\\Plane-site\\PlaneTest1\\PlaneTest1.csproj",
+        "packagesPath": "C:\\Users\\barf\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHub\\Plane-site\\PlaneTest1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\barf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }
