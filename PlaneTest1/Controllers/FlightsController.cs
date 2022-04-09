@@ -21,12 +21,14 @@ namespace PlaneTest1.Controllers
         }
 
         // GET: Flights
+        [Authorize(Roles = "Administrator")]// da ima rolq che da ima perm da pipa tam
         public async Task<IActionResult> Index()
         {
             return View(await _context.Flights.ToListAsync());
         }
 
         // GET: Flights/Details/5
+        [Authorize(Roles = "Administrator")]// da ima rolq che da ima perm da pipa tam
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -68,6 +70,7 @@ namespace PlaneTest1.Controllers
         }
 
         // GET: Flights/Edit/5
+        [Authorize(Roles = "Administrator")]// da ima rolq che da ima perm da pipa tam
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -84,6 +87,7 @@ namespace PlaneTest1.Controllers
         }
 
         // POST: Flights/Edit/5
+        [Authorize(Roles = "Administrator")]// da ima rolq che da ima perm da pipa tam
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -119,6 +123,7 @@ namespace PlaneTest1.Controllers
         }
 
         // GET: Flights/Delete/5
+        [Authorize(Roles = "Administrator")]// da ima rolq che da ima perm da pipa tam
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

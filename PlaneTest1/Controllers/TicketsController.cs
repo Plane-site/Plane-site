@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -66,6 +67,7 @@ namespace PlaneTest1.Controllers
         }
 
         // GET: Tickets/Edit/5
+        [Authorize(Roles = "Administrator")]// da ima rolq che da ima perm da pipa tam
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -117,6 +119,7 @@ namespace PlaneTest1.Controllers
         }
 
         // GET: Tickets/Delete/5
+        [Authorize(Roles = "Administrator")]// da ima rolq che da ima perm da pipa tam
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
